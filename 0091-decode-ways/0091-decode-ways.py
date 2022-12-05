@@ -1,5 +1,8 @@
 class Solution:
     def numDecodings(self, s: str) -> int:
+        # solved by subproblem instead of element by element
+        # initialize to be 0
+        # dp: len + 1; s[i - 1]
         n = len(s)
         dp = [0] * (n + 1)
         dp[0] = 1
