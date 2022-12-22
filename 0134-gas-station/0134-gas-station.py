@@ -8,7 +8,6 @@ class Solution:
             _sum += ele
             prefix_sum.append(_sum)
         
-        print(prefix_sum)
         if prefix_sum[-1] < 0:
             return -1
         else:
